@@ -8,5 +8,6 @@
 
 ---
 
-### Acesse o site do portifólio: https://fatec-jacarei-dsm-portfolio.github.io/ra2581392513021/
-### Assista o video de apresentação do portifólio: 
+🔗 [Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392513021/)
+
+🎤 [Pitch de Apresentação (vídeo)](https://youtu.be/f4UvjN_7B5Y)
