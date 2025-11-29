@@ -3,206 +3,393 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Leonardo Broinizi de Farias</title>
+    <meta name="description" content="Portfólio de Leonardo Broinizi - Desenvolvedor de Software Multiplataforma">
+    <title>Portfólio | Leonardo Broinizi</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-</head>
+    
+    </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">Leonardo Broinizi</div>
-            <ul>
-                <li><a href="#inicio">Apresentação</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
+    <header id="header">
+        <nav class="container">
+            <a href="#" class="logo">L. Broinizi<span class="dot">.</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato" class="btn-highlight">Contato</a></li>
             </ul>
+            
+            <button class="menu-toggle" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
         </nav>
     </header>
 
     <main>
-        <section id="inicio" class="section-container">
-            <div class="inicio-content">
-                <div class="inicio-text" data-aos="fade-right">
-                    <p class="intro-ola">OLÁ, EU SOU</p>
-                    <h1>Leonardo Broinizi de Farias</h1>
-                    <h2>Desenvolvedor de Software Multiplataforma</h2>
-                    <p class="intro-bio">
+        <section id="inicio" class="hero-section">
+            <div class="container hero-wrapper">
+                <div class="hero-content" data-aos="fade-right">
+                    <span class="badge">Desenvolvedor em Formação</span>
+                    <h1>Transformando problemas em <span class="text-gradient">soluções de software</span>.</h1>
+                    <p>
+                        Graduando em Desenvolvimento de Software Multiplataforma na FATEC. 
                         Em transição de carreira para a área de tecnologia, unindo experiência em comunicação e trabalho em equipe com a paixão por desenvolver soluções criativas e funcionais.
                     </p>
-                    <div class="intro-buttons">
-                        <a href="assets/cv/curriculo.pdf" target="_blank" class="btn btn-primary">Baixar Currículo</a>
-                        <a href="https://github.com/Leonardo-Broinizi" target="_blank" class="btn btn-secondary">Ver GitHub</a>
+                    
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
+                        <a href="assets/cv/curriculo.pdf" target="_blank" class="btn btn-outline" title="Baixar Currículo">
+                            CV <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>Tech Stack:</span>
+                        <div class="icons">
+                            <i class="fab fa-html5" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" title="CSS3"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fas fa-database" title="SQL"></i>
+                            <i class="fab fa-react" title="React (Estudando)" style="opacity: 0.5;"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="inicio-img" data-aos="fade-left" data-aos-delay="200">
-                    <img src="assets/img/foto-perfil.jpg" alt="Foto de Leonardo Broinizi de Farias">
+                
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="img-frame">
+                        <img src="assets/img/foto-perfil.jpg" alt="Foto de Leonardo Broinizi">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="portfolio" class="section-container section-bg">
-            
-            <h2 data-aos="fade-up">Projetos</h2>
-            <div class="portfolio-grid">
-                
-                <div class="projeto-card" data-aos="fade-up">
-                    <div class="card-bg" style="background-image: url('assets/img/abp_sistema_de_consulta_horarios.png');"></div>
-                    <div class="card-content">
-                        <h4>Sistema de Consulta de Horários</h4>
-                        <p>Principal projeto do semestre (ABP) na FATEC. Participei como membro do Dev Team no desenvolvimento do sistema.</p>
-                        <div class="tags"><span>HTML</span><span>CSS</span><span>PHP</span><span>SQL</span></div>
-                        <div class="projeto-links">
-                            <a href="https://github.com/CRIMS0NC0DE/abp-2025-1.git" target="_blank">Repositório</a>
-                            <a href="https://fatreck.ct.ws/?i=1" target="_blank">Ver Online</a>
-                        </div>
+        <section id="sobre" class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Sobre Mim</h2>
+                    <p>Além do código</p>
+                </div>
+                <div class="about-grid" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-text">
+                        <p>
+                            Sou apaixonado por tecnologia e aprendizado contínuo. Minha transição de carreira é motivada pelo desejo de construir ferramentas que impactem positivamente a vida das pessoas. 
+                            Valorizo a organização, o trabalho em equipe e a comunicação clara.
+                        </p>
+                        <p>No meu tempo livre, busco equilíbrio através de:</p>
+                        <ul class="hobbies-list">
+                            <li><i class="fas fa-gamepad"></i> Games</li>
+                            <li><i class="fas fa-book-open"></i> Leitura & Escrita</li>
+                            <li><i class="fas fa-running"></i> Exercícios Físicos</li>
+                            <li><i class="fas fa-users"></i> Tempo em Família</li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="projeto-card" data-aos="fade-up" data-aos-delay="100">
-                     <div class="card-bg" style="background-image: url('assets/img/python.jpg');"></div>
-                    <div class="card-content">
-                        <h4>Calculadora de Tempo Decorrido</h4>
-                        <p>Script em Python para calcular o intervalo exato entre duas datas, sem usar bibliotecas externas de data/hora.</p>
-                        <div class="tags"><span>Python</span><span>Lógica</span></div>
-                        <div class="projeto-links">
-                            <a href="https://github.com/Leonardo-Broinizi/exercicios_proprios_de_python.git" target="_blank">Repositório</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projeto-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-bg" style="background-image: url('assets/img/projeto_login.png');"></div>
-                    <div class="card-content">
-                        <h4>Projeto Login</h4>
-                        <p>Tela de login responsiva desenvolvida para praticar conceitos avançados de HTML e CSS. (Curso em Vídeo)</p>
-                        <div class="tags"><span>HTML</span><span>CSS</span></div>
-                        <div class="projeto-links">
-                            <a href="https://github.com/Leonardo-Broinizi/projeto-login.git" target="_blank">Repositório</a>
-                            <a href="https://leonardo-broinizi.github.io/projeto-login/" target="_blank">Ver Online</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="projeto-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-bg" style="background-image: url('assets/img/projeto_android.png');"></div>
-                    <div class="card-content">
-                        <h4>Curiosidades Android</h4>
-                        <p>Página informativa sobre a história do mascote do Android, focada em design responsivo e semântica. (Curso em Vídeo)</p>
-                        <div class="tags"><span>HTML</span><span>CSS</span></div>
-                        <div class="projeto-links">
-                            <a href="https://github.com/Leonardo-Broinizi/projeto-android.git" target="_blank">Repositório</a>
-                            <a href="https://leonardo-broinizi.github.io/projeto-android/#" target="_blank">Ver Online</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projeto-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-bg" style="background-image: url('assets/img/banco_de_dados.jpg');"></div>
-                    <div class="card-content">
-                        <h4>Atividades de Banco de Dados</h4>
-                        <p>Exercícios práticos de modelagem e consulta em bancos de dados relacionais para a disciplina da FATEC.</p>
-                        <div class="tags"><span>SQL</span></div>
-                        <div class="projeto-links">
-                            <a href="https://github.com/Leonardo-Broinizi/db_relacional_atividades_2-dsm.git" target="_blank">Repositório</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projeto-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-bg" style="background-image: url('assets/img/estudos.jpg');"></div>
-                    <div class="card-content">
-                        <h4>Repositórios de Estudos</h4>
-                        <p>Compilado de exercícios e projetos de fixação de diversas tecnologias, documentando minha jornada de aprendizado.</p>
-                        <div class="tags"><span>JS</span><span>Python</span><span>HTML/CSS</span></div>
-                        <div class="projeto-links">
-                            <a href="https://github.com/Leonardo-Broinizi?tab=repositories" target="_blank">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <h2 data-aos="fade-up">Formação e Certificados</h2>
-            <div class="portfolio-grid">
-
-                <div class="formacao-card" data-aos="fade-up">
-                    <h4>Escola de Inovadores</h4>
-                    <p class="instituicao">Inova CPS (40h)</p>
-                    <p>Programa focado no ciclo completo de inovação, da ideação e prototipagem ao teste e formalização de soluções.</p>
-                    <a href="assets/certificates/inova_certificado_2025-1.pdf" target="_blank" class="btn-cert">Ver Certificado</a>
-                </div>
-                
-                <div class="formacao-card" data-aos="fade-up" data-aos-delay="100">
-                    <h4>Orientação Profissional</h4>
-                    <p class="instituicao">B7Web (20h)</p>
-                    <p>Curso voltado para o desenvolvimento de habilidades e competências para o exercício profissional na área de tecnologia.</p>
-                    <a href="assets/certificates/certificado_orientacao_b7web_5684343.jpg" target="_blank" class="btn-cert">Ver Certificado</a>
-                </div>
-
-                <div class="formacao-card" data-aos="fade-up" data-aos-delay="200">
-                    <h4>HTML5 Completo</h4>
-                    <p class="instituicao">OneBitCode (12h)</p>
-                    <p>Formação cobrindo desde a estrutura fundamental do HTML até conceitos como semântica e acessibilidade (WAI-ARIA).</p>
-                    <a href="assets/certificates/html5_onebitcode_certificate.pdf" target="_blank" class="btn-cert">Ver Certificado</a>
-                </div>
-
-                <div class="formacao-card" data-aos="fade-up" data-aos-delay="300">
-                    <h4>Introdução ao Git</h4>
-                    <p class="instituicao">Cursa (8h)</p>
-                    <p>Curso básico sobre o sistema de controle de versão Git, essencial para o desenvolvimento de software em equipe.</p>
-                    <a href="assets/certificates/certificado_git_introducao_cursa.jpg" target="_blank" class="btn-cert">Ver Certificado</a>
-                </div>
-
-                <div class="formacao-card" data-aos="fade-up" data-aos-delay="100">
-                    <h4>Linux Unhatched</h4>
-                    <p class="instituicao">Cisco Networking Academy</p>
-                    <p>Curso introdutório sobre os fundamentos e a utilização do sistema operacional Linux.</p>
-                    <a href="assets/certificates/Linux_Unhatched_certificate_cisco.pdf" target="_blank" class="btn-cert">Ver Certificado</a>
-                </div>
-                
             </div>
         </section>
 
-        <section id="contato" class="section-container">
-            <h2 data-aos="fade-up">Vamos conversar?</h2>
-            <p class="contato-subtitle" data-aos="fade-up" data-aos-delay="100">
-                Estou aberto a novas oportunidades e desafios. Entre em contato para conversarmos sobre como posso agregar valor à sua equipe.
-            </p>
-            <div class="contato-links" data-aos="fade-up" data-aos-delay="200">
-                <a href="https://www.linkedin.com/in/leonardo-broinizi/" target="_blank" class="contato-btn" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:leonardobroinizidefarias@gmail.com" class="contato-btn" title="E-mail">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://github.com/Leonardo-Broinizi" target="_blank" class="contato-btn" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/leonardo_broinizi/" target="_blank" class="contato-btn" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
+        <section id="portfolio" class="section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Portfólio de Projetos</h2>
+                    <p>Acadêmicos, Pessoais e Profissionais</p>
+                </div>
+
+                <div class="filter-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="academico">Acadêmicos (FATEC)</button>
+                    <button class="filter-btn" data-filter="pessoal">Pessoais & Estudos</button>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <article class="project-card" data-category="academico" data-aos="fade-up">
+                        <div class="card-thumb">
+                            <div class="thumb-placeholder code-pattern">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/davisnaider06/mapaHaversine" target="_blank" title="Ver Código"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">Acadêmico • Matemática Comp.</span>
+                            <h3>Consulta Geoespacial</h3>
+                            <p>Calculadora de distâncias geográficas em linha reta usando PostGIS, fórmula de Haversine e distância Euclidiana.</p>
+                            <div class="contribution-box">
+                                <strong>Minha Atuação:</strong>
+                                <p>Desenvolvimento da lógica matemática em TypeScript e organização da estrutura do código.</p>
+                            </div>
+                            <div class="tech-tags">
+                                <span>TypeScript</span><span>Lógica</span><span>Git</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="academico" data-aos="fade-up">
+                        <div class="card-thumb">
+                            <img src="assets/img/estudos.jpg" alt="Projeto Integrador 2º Semestre" loading="lazy">
+                            <div class="card-links">
+                                <a href="https://github.com/Leonardo-Broinizi?tab=repositories" target="_blank" title="Ver Repositórios"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">Acadêmico • ABP 2º Sem</span>
+                            <h3>Projeto Integrador (API)</h3>
+                            <p>Solução desenvolvida em equipe para disciplina de Projeto Integrador.</p>
+                            <div class="contribution-box">
+                                <strong>Minha Atuação:</strong>
+                                <p>Responsável pelo Frontend: implementação do layout responsivo e integração visual.</p>
+                            </div>
+                            <div class="tech-tags">
+                                <span>HTML5</span><span>CSS3</span><span>JS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="academico" data-aos="fade-up">
+                        <div class="card-thumb">
+                            <img src="assets/img/abp_sistema_de_consulta_horarios.png" alt="Sistema de Horários FATEC" loading="lazy">
+                            <div class="card-links">
+                                <a href="https://fatreck.ct.ws/?i=1" target="_blank" title="Demo Online"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/CRIMS0NC0DE/abp-2025-1.git" target="_blank" title="Código"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">Acadêmico • ABP 1º Sem</span>
+                            <h3>Sistema de Consulta de Horários</h3>
+                            <p>Sistema web centralizado para horários acadêmicos da FATEC Jacareí.</p>
+                            <div class="contribution-box">
+                                <strong>Minha Atuação:</strong>
+                                <p>Desenvolvimento Frontend: otimização, responsividade, acessibilidade e UX/UI.</p>
+                            </div>
+                            <div class="tech-tags">
+                                <span>PHP</span><span>HTML/CSS</span><span>SQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="academico" data-aos="fade-up">
+                        <div class="card-thumb">
+                            <img src="assets/img/banco_de_dados.jpg" alt="Modelagem de Banco de Dados" loading="lazy">
+                            <div class="card-links">
+                                <a href="https://github.com/Leonardo-Broinizi/db_relacional_atividades_2-dsm.git" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">Acadêmico • DSM</span>
+                            <h3>Modelagem de Banco de Dados</h3>
+                            <p>Práticas de modelagem lógica/física (MER/DER) e queries SQL para cenários de negócio.</p>
+                            <div class="tech-tags">
+                                <span>SQL</span><span>Modelagem de Dados</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="pessoal" data-aos="fade-up">
+                        <div class="card-thumb">
+                            <img src="assets/img/python.jpg" alt="Python Script" loading="lazy">
+                            <div class="card-links">
+                                <a href="https://github.com/Leonardo-Broinizi/exercicios_proprios_de_python.git" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">Pessoal • Algoritmos</span>
+                            <h3>Calculadora de Tempo</h3>
+                            <p>Script para cálculo preciso de intervalos entre datas sem uso de bibliotecas externas.</p>
+                            <div class="tech-tags">
+                                <span>Python</span><span>Lógica Pura</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="pessoal" data-aos="fade-up">
+                        <div class="card-thumb">
+                            <img src="assets/img/projeto_login.png" alt="Tela de Login" loading="lazy">
+                            <div class="card-links">
+                                <a href="https://leonardo-broinizi.github.io/projeto-login/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Leonardo-Broinizi/projeto-login.git" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">Estudo • Interface</span>
+                            <h3>Tela de Login Responsiva</h3>
+                            <p>Estudo de Media Queries e design moderno adaptável a mobile e desktop.</p>
+                            <div class="tech-tags">
+                                <span>HTML5</span><span>CSS3</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" data-category="pessoal" data-aos="fade-up">
+                        <div class="card-thumb">
+                            <img src="assets/img/projeto_android.png" alt="História do Android" loading="lazy">
+                            <div class="card-links">
+                                <a href="https://leonardo-broinizi.github.io/projeto-android/#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Leonardo-Broinizi/projeto-android.git" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">Estudo • Semântica</span>
+                            <h3>História do Android</h3>
+                            <p>Site informativo focado em semântica HTML, SEO e navegação responsiva.</p>
+                            <div class="tech-tags">
+                                <span>HTML5</span><span>SEO</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
             </div>
         </section>
+
+        <section id="formacao" class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Formação & Certificações</h2>
+                    <p>Aprendizado Contínuo</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item highlight" data-aos="fade-left">
+                        <div class="timeline-date">2025 - 2027</div>
+                        <div class="timeline-content">
+                            <h3>Tecnólogo em Desenvolvimento de Software Multiplataforma</h3>
+                            <span class="institution">FATEC Jacareí</span>
+                            <p>Formação superior focada em Full Stack, IoT, Engenharia de Software e Bancos de Dados.</p>
+                        </div>
+                    </div>
+
+                    <div class="certs-grid">
+                        <div class="cert-item" data-aos="zoom-in" data-aos-delay="100">
+                            <h4>Escola de Inovadores</h4>
+                            <span>Inova CPS (40h) • 2025</span>
+                            <a href="assets/certificates/inova_certificado_2025-1.pdf" target="_blank">Ver Certificado</a>
+                        </div>
+
+                        <div class="cert-item" data-aos="zoom-in" data-aos-delay="150">
+                            <h4>Inglês - Basic</h4>
+                            <span>Fluency Academy (100h) • 2025</span>
+                            <a href="assets/certificates/Certificado_Basic_Fluency-Academy.pdf" target="_blank">Ver Certificado</a>
+                        </div>
+                        
+                        <div class="cert-item" data-aos="zoom-in" data-aos-delay="200">
+                            <h4>Conversação em Inglês</h4>
+                            <span>Preply (50h) & Cambly (24h) • 2025</span>
+                            <div class="multi-links">
+                                <a href="assets/certificates/preply_certificate_50_hours.pdf" target="_blank">Preply</a> | 
+                                <a href="assets/certificates/cambly_certificate_24_hours.pdf" target="_blank">Cambly</a>
+                            </div>
+                        </div>
+
+                        <div class="cert-item" data-aos="zoom-in" data-aos-delay="250">
+                            <h4>Linux Unhatched</h4>
+                            <span>Cisco Academy • 2025</span>
+                            <a href="assets/certificates/Linux_Unhatched_certificate_cisco.pdf" target="_blank">Ver Certificado</a>
+                        </div>
+                        
+                        <div class="cert-item" data-aos="zoom-in" data-aos-delay="300">
+                            <h4>HTML5 Completo</h4>
+                            <span>OneBitCode (12h) • 2025</span>
+                            <a href="assets/certificates/html5_onebitcode_certificate.pdf" target="_blank">Ver Certificado</a>
+                        </div>
+
+                        <div class="cert-item" data-aos="zoom-in" data-aos-delay="350">
+                            <h4>Git e GitHub</h4>
+                            <span>Cursa (8h) • 2025</span>
+                            <a href="assets/certificates/certificado_git_introducao_cursa.jpg" target="_blank">Ver Certificado</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section-padding">
+            <div class="container contact-wrapper">
+                <div class="contact-header" data-aos="fade-up">
+                    <h2>Vamos Conectar?</h2>
+                    <p>Estou aberto a oportunidades de estágio e colaborações. Visite minhas redes profissionais.</p>
+                </div>
+                
+                <div class="contact-cards" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://www.linkedin.com/in/leonardo-broinizi/" target="_blank" class="c-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Leonardo-Broinizi" target="_blank" class="c-card">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Leonardo Broinizi. Portfólio Acadêmico FATEC.</p>
+                <small>Desenvolvido com HTML5, CSS3 e JS Vanilla.</small>
+            </div>
+        </footer>
     </main>
 
-    <footer>
-        <p>&copy; 2025 - Leonardo Broinizi de Farias</p>
-    </footer>
-    
     <script src="assets/js/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 800,
-            once: true
+        // Init AOS
+        AOS.init({ duration: 800, once: true, offset: 100 });
+
+        // Mobile Menu
+        const menuBtn = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Project Filters
+        const filters = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project-card');
+
+        filters.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class
+                filters.forEach(f => f.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projects.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'flex';
+                        // Small delay for animation
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => card.style.display = 'none', 300);
+                    }
+                });
+            });
         });
     </script>
 </body>
