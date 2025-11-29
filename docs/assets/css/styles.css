@@ -37,7 +37,9 @@ img { max-width: 100%; display: block; }
 .text-gradient { 
     background: linear-gradient(90deg, var(--primary), var(--accent)); 
     -webkit-background-clip: text; 
+    background-clip: text;                /* Adicionado para padrão web */
     -webkit-text-fill-color: transparent; 
+    color: transparent;                   /* Fallback para navegadores que suportam clip mas não fill-color */
 }
 
 /* === HEADER === */
